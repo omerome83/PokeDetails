@@ -81,7 +81,6 @@ select {
 
 :root {
   /*  Pokemon Colors */
-
   --color-red: rgb(255, 0, 0);
   --color-boston-red: rgb(204, 0, 0);
   --color-gold: rgb(255, 203, 5);
@@ -134,10 +133,9 @@ h3 {
 }
 
 .app-name {
-  margin: 1em 0 1em 0;
-  font-size: var(--font-size-1400);
+  font-size: var(--font-size-1000);
+  margin: 0.5em 0 0.5em 0;
   color: var(--color-gold);
-  font-family: "Courgette", sans-serif;
   text-shadow: 5px 5px var(--color-navy-blue);
   letter-spacing: 0.3rem;
 }
@@ -149,7 +147,7 @@ h3 {
 .pokemon-container {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-template-columns: repeat(7, minmax(200px, 1fr));
 }
 
 .pokemon-card {
@@ -160,6 +158,11 @@ h3 {
   padding: 1em;
   border-radius: 0.5em;
   justify-content: space-between;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.00625);
+  cursor: pointer;
 }
 
 .pokemon-card__top_container {
@@ -183,10 +186,10 @@ h3 {
 }
 
 .pokemon-card__name {
-  color: var(--color-white);
   font-family: "Courgette", sans-serif;
-  text-transform: capitalize;
   font-size: var(--font-size-1000);
+  color: var(--color-white);
+  text-transform: capitalize;
   text-shadow: 2px 2px var(--color-darker-gray);
 }
 
@@ -203,23 +206,28 @@ h3 {
   color: var(--color-tan);
 }
 
+/* Media breakpoints for responsive design */
+
+@media (max-width: 2275px) {
+  .pokemon-container {
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+  }
+}
+
 @media (max-width: 1475px) {
   .pokemon-container {
-    display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 950px) {
   .pokemon-container {
-    display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 715px) {
   .pokemon-container {
-    display: grid;
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
 }
