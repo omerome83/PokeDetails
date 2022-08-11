@@ -148,6 +148,7 @@ h3 {
 
 .pokemon-container {
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(5, minmax(200px, 1fr));
 }
 
@@ -155,7 +156,7 @@ h3 {
   display: grid;
   background-color: var(--color-dark-gray);
   max-width: 18em;
-  margin: 1em;
+  margin: 0.5em;
   padding: 1em;
   border-radius: 0.5em;
   justify-content: space-between;
