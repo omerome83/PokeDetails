@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Monda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Monda&family=Courgette&display=swap");
 
 /* Modern CSS Reset - https://piccalil.li/blog/a-modern-css-reset/ */
 
@@ -186,7 +186,7 @@ h3 {
 }
 
 .pokemon-card__name {
-  font-family: "Courgette", sans-serif;
+  font-family: "Kalam", sans-serif;
   font-size: var(--font-size-1000);
   color: var(--color-white);
   text-transform: capitalize;
@@ -197,6 +197,7 @@ h3 {
   font-family: "Courgette", sans-serif;
   font-size: var(--font-size-500);
   color: var(--color-gold);
+  text-shadow: 1px 1px var(--color-darker-gray);
   text-transform: capitalize;
 }
 
