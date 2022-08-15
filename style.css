@@ -137,7 +137,7 @@ h3 {
   font-size: var(--font-size-1000);
   margin: 0.5em 0 0.5em 0;
   color: var(--color-gold);
-  text-shadow: 3px 5px var(--color-navy-blue);
+  text-shadow: 3px 3px var(--color-navy-blue);
   letter-spacing: 0.3rem;
 }
 
