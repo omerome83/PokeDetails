@@ -41,13 +41,9 @@ const getPokemon = async (id) => {
   formatPokemon(pokemon);
 };
 
-fetchPokemon()
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+fetchPokemon().catch((err) => {
+  console.error(err);
+});
 
 const formatPokemon = (pokemon) => {
   const { id, hp, name, image, type, weight, height } = pokemon;
