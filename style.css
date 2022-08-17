@@ -188,7 +188,7 @@ h3 {
 
 .pokemon-card__name {
   font-family: "Kalam", sans-serif;
-  font-size: var(--font-size-1000);
+  font-size: var(--font-size-800);
   color: var(--color-white);
   margin-top: 0.25em;
   text-transform: capitalize;
