@@ -24,9 +24,9 @@ const getPokemon = async (id) => {
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const data = await response.json();
 
-  const formatID = () => `#${data.id.toString().padStart(3, "0")}`;
-  const formatWeight = () => `${parseFloat(data.weight / 10).toFixed(1)}kg`;
-  const formatHeight = () => `${parseFloat(data.height / 10).toFixed(1)}m`;
+  const formatID = () => `${data.id.toString().padStart(3, "0")}`;
+  const formatWeight = () => `${parseFloat(data.weight / 10).toFixed(1)}`;
+  const formatHeight = () => `${parseFloat(data.height / 10).toFixed(1)}`;
 
   const pokemon = {
     id: formatID(),
@@ -51,7 +51,7 @@ const formatPokemon = (pokemon) => {
   let html = `
   <div class="pokemon-card">
       <div class="pokemon-card__top_container">
-        <span class="pokemon-card__id">${id}</span>
+        <span class="pokemon-card__id">#${id}</span>
         <span class="pokemon-card__hp"><img src=" ./images/hp-heart.png" />
           ${hp} / ${hp}
         </span>
@@ -61,7 +61,7 @@ const formatPokemon = (pokemon) => {
       <h2 class="pokemon-card__type center-text">${type.join(", ")}</h2>
       <div class="pokemon-card__info center-text">
           <h3 class="pokemon-card__info">
-              Height: ${height} | Weight: ${weight}
+              Height: ${height}m | Weight: ${weight}kg
           </h3>
       </div>
   </div>
