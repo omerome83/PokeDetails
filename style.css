@@ -148,7 +148,7 @@ h3 {
 .pokemon-container {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(7, minmax(200px, 1fr));
+  grid-template-columns: repeat(8, minmax(200px, 1fr));
 }
 
 .pokemon-card {
@@ -190,8 +190,14 @@ h3 {
   font-family: "Kalam", sans-serif;
   font-size: var(--font-size-1000);
   color: var(--color-white);
+  margin-top: 0.25em;
   text-transform: capitalize;
   text-shadow: 2px 2px var(--color-darker-gray);
+}
+
+.pokemon-card__image {
+  max-width: 50%;
+  place-self: center;
 }
 
 .pokemon-card__type {
@@ -212,17 +218,23 @@ h3 {
 
 @media (max-width: 2275px) {
   .pokemon-container {
-    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
   }
 }
 
-@media (max-width: 1475px) {
+@media (max-width: 1850px) {
+  .pokemon-container {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 1275px) {
   .pokemon-container {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .pokemon-container {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
