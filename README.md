@@ -1,7 +1,7 @@
 # PokeDetails
-My adaption on utilizing the [Pokemon API](https://pokeapi.co). 
+My adaption on utilizing the [Pokemon API](https://pokeapi.co) and it was a very fun project to do. 
 
-Currently, it is fetching the first 150 Pokemon using the async/await syntax and displaying along with their info in a CSS grid.
+It is currently fetching the first 150 Pokemon using the async/await syntax and displaying along with their info in a CSS grid.
 
 The app also takes into consideration responsiveness. Depending on the device that it is used, the columns will change to properly fit the content.
 
